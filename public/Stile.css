@@ -1,0 +1,108 @@
+:root {
+  --bg_color: rgb(255, 255, 255);
+  --bg_color_hl: rgb(255, 251, 0);  
+  --bg_color_txt: rgb(214, 235, 245);
+  --bg_color_cmt: rgb(245, 208, 0); 
+  --bg_color_titolo: rgb(38, 139, 228);  
+
+  --line_color: white;
+  --line_color_txt: rgb(38, 139, 228); 
+
+  --txt_color: rgb(0, 0, 0);  
+  --txt_color_cmt: rgb(0, 0, 0);
+  --txt_color_title: white;
+  
+  --border-with: 1px;
+  --border-radius: 5px;
+}
+
+.div_titolo {  
+  background-color: var(--bg_color_titolo);
+  color: var(--txt_color_title);
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: medium;
+  text-align: center;
+}
+
+.btn_title {
+  background-color: var(--bg_color_titolo);
+  border-style: solid;    
+  border-width: var(--border-with);
+  border-color: var(--line_color);  
+  padding: 5px;
+  width: 50px;
+  height: 40px;
+  left: 10px;
+  top: 5px;
+  font-size: large;
+  position: absolute;
+}
+
+.div_messaggio {  
+  border-style: solid;    
+  border-width: var(--border-with);
+  border-color: var(--line_color);
+  background-color: var(--bg_color_cmt);
+  color: var(--txt_color_cmt);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+.div_txtChkNumber {
+  width: 200px;
+  border-style: solid;    
+  border-width: var(--border-with);
+  border-color: var(--line_color);  
+  margin: 5px;
+  padding: 20px;
+  border-radius: var(--border-radius);  
+  font-size: medium;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.input_txtChkNumber {
+  text-align: center;
+  border: var(--border-with) solid var(--line_color_txt);
+  border-radius: var(--border-radius);
+  width: 100%;  
+  font-size: xx-large;
+  background-color: var(--bg_color_txt);  
+}
+.input_txtChkNumber:focus {
+  background-color: var(--bg_color_hl);
+}
+
+body{
+  background-color: var(--bg_color);
+  color: var(--txt_color);
+  font-family: 'Arial Narrow';
+}
+
+.btn_ricomincia {
+  background-color: var(--menu_bg_btn); 
+  color: var(--menu_txt_color);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;    
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;    
+  border-width: var(--menu_border-with);
+  border-color: var(--menu_line_color);    
+  border-radius: var(--menu_border-radius); 
+  width: 150px;
+  height: 150px;
+}
